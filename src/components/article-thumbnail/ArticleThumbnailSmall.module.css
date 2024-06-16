@@ -1,0 +1,161 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.image{
+  position: relative;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4%;
+}
+.info_container{
+  width: 57%;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+.container a{
+  text-decoration: none;
+}
+.container a,.container p,.container h2,.container h3{
+  font-family: "Times New Roman", Times, serif;
+}
+@container (min-width: 25px){
+  .title{
+    font-size: 9px;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+  .footer a{
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@container (min-width: 75px){
+  .title{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+  .footer a{
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@container (min-width: 125px){
+  .title{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+  .footer a{
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@container (min-width: 150px){
+  .title{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+  .footer a{
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@container (min-width: 200px){
+  .title{
+    font-size: 21px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 13px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@container (min-width: 250px){
+  .title{
+    font-size: 27px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 15px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@container (min-width: 300px){
+  .title{
+    font-size: 32px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 17px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}

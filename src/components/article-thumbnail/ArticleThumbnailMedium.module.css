@@ -1,0 +1,171 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.container a,.container p,.container h2,.container h3{
+  font-family: "Times New Roman", Times, serif;
+}
+.image{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
+}
+.info_container{
+  width: 100%;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+  }
+.container a{
+  text-decoration: none;
+}
+
+@container (min-width: 100px){
+  .title{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+  .footer a{
+    padding: 0;
+    font-size: 12px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@container (min-width: 200px){
+  .title{
+    font-size: 19px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 13px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@container (min-width: 250px){
+  .title{
+    font-size: 23px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 15px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@container (min-width: 300px){
+  .title{
+    font-size: 30px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 17px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+@container (min-width: 400px){
+  .title{
+    font-size: 38px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 17px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+@container (min-width: 600px){
+  .title{
+    font-size: 45px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 17px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+@container (min-width: 700px){
+  .title{
+    font-size: 52px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 17px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+@container (min-width: 900px){
+  .title{
+    font-size: 62px;
+    color: black;
+  }
+   .footer a{
+    padding: 0;
+    font-size: 17px;
+  }
+  .footer p{
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+  }
+}
