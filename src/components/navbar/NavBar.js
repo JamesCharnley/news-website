@@ -3,28 +3,30 @@ export function NavBar() {
   return (
     <div className={styles.sticky_navbar}>
       <div className={styles.tabs}>
-        <a className={styles.nav_content} href="/">
-          Home
+        <div className={styles.tab_container}>
+          <a className={styles.nav_content} href="/">
+          Crime
         </a>
-        <a
-          className={styles.nav_content}
-          href="https://github.com/JamesCharnley"
-        >
-          GitHub
+        </div>
+        <div className={styles.tab_container}>
+          <a className={styles.nav_content} href="/">
+          Politics
         </a>
+        </div>
         <div
           style={{ backgroundImage: `url("/aignews.png")` }}
           className={styles.image}
         ></div>
-        <a
-          className={styles.nav_content}
-          href="https://www.linkedin.com/in/james-charnley-nz"
-        >
-          LinkedIn
+        <div className={styles.tab_container}>
+          <a className={styles.nav_content} href="/">
+          Business
         </a>
-        <a className={styles.nav_content} href="https://jamescharnley.itch.io/">
-          Itch.io
+        </div>
+        <div className={styles.tab_container}>
+          <a className={styles.nav_content} href="/">
+          Sport
         </a>
+        </div>
       </div>
     </div>
   );

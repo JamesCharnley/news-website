@@ -14,8 +14,7 @@
 }
 
 .nav_content {
-  float: left;
-  display: flex;
+  margin-top: auto;
   color: black;
   text-align: center;
   padding: 14px;
@@ -31,6 +30,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.tabs{
+  display: flex;
+  justify-content: space-between;
+}
+.tab_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 500px){
