@@ -10,11 +10,13 @@ export function ArticleThumbnailMedium({article}){
       <div className={styles.info_container}>
         <a href={`/article/${article.id}`}>
           <h3 className={styles.title}>
-            {article.title.length > 64 ? article.title.substr(0, 63) : article.title}
+            {article.title.length > 64
+              ? article.title.substr(0, 60) + "..."
+              : article.title}
           </h3>
         </a>
         <div className={styles.footer}>
-          <a href="/">{article.category}</a>
+          <a href={`/category/${article.category}`}>{article.category}</a>
           <p>{article.date}</p>
         </div>
       </div>

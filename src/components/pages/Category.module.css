@@ -1,0 +1,32 @@
+.container{
+  width: 100vw;
+  padding-top: 120px;
+}
+.flex_row{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 35px;
+}
+.flex_col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex_row_large{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.flex_row_small{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container a,.container p,.container h2,.container h3{
+  font-family: "Times New Roman", Times, serif;
+}

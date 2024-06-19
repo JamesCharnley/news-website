@@ -15,6 +15,7 @@ export function Article({articles}) {
     return <div></div>
   }
   console.log(Date.now());
+  const date = new Date(article.time).toDateString();
   return (
     <div className={styles.container}>
       <NavBar />
@@ -27,7 +28,7 @@ export function Article({articles}) {
             <h1>{article.title}</h1>
             <span>
               <p>Author: {article.author}</p>
-              <p>Published: {article.time}</p>
+              <p>Published: {date}</p>
             </span>
             <div
               style={{ backgroundImage: `url(${article.imageUrl})` }}
@@ -37,11 +38,7 @@ export function Article({articles}) {
           </article>
         </div>
         <div className={styles.flex_row_side}>
-          <ArticleThumbnailSmall article={articles[0]} />
-          <ArticleThumbnailSmall article={articles[0]} />
-          <ArticleThumbnailSmall article={articles[0]} />
-          <ArticleThumbnailSmall article={articles[0]} />
-          <ArticleThumbnailSmall article={articles[0]} />
+          {articles.map((a) => <ArticleThumbnailSmall article={a} key={a.id} />)}
         </div>
       </div>
     </div>

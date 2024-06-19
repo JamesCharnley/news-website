@@ -6,7 +6,9 @@
 .title{
   font-size: 18px;
   font-weight: 500;
+  color: black;
 }
 .container a{
   text-decoration: none;
+  color: rgb(101, 101, 226);
 }

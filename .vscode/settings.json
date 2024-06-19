@@ -1,0 +1,5 @@
+{
+  "appService.showBuildDuringDeployPrompt": false,
+  "appService.defaultWebAppToDeploy": "/subscriptions/3c2c377a-57d9-4f90-82c8-bbaa776043aa/resourceGroups/webfe/providers/Microsoft.Web/sites/aignews",
+  "appService.deploySubpath": "."
+}

@@ -29,8 +29,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  
 }
-
+.footer a{
+  color: rgb(101, 101, 226);
+}
 .title{
     font-size: 30px;
     font-weight: 500;
@@ -64,12 +67,12 @@
   }
    .footer a{
     padding: 0;
-    font-size: 13px;
+    font-size: 15px;
   }
   .footer p{
     padding: 0;
     margin: 0;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
   }
 }
@@ -139,17 +142,17 @@
 }
 @container (min-width: 700px){
   .title{
-    font-size: 52px;
+    font-size: 48px;
     color: black;
   }
    .footer a{
     padding: 0;
-    font-size: 17px;
+    font-size: 20px;
   }
   .footer p{
     padding: 0;
     margin: 0;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
   }
 }

@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
-import { ArticleThumbnailSmall } from '../article-thumbnail/ArticleThumbnailSmall';
-import { ArticleThumbnailMedium } from '../article-thumbnail/ArticleThumnailMedium';
-import styles from './Home.module.css';
-import { ArticleLink } from '../article-thumbnail/ArticleLink';
-import { VerticalBanner } from '../ads/VerticalBanner';
-import { NavBar } from '../navbar/NavBar';
+import styles from './Category.module.css';
+import { useEffect, useState } from "react";
+import { ArticleThumbnailSmall } from "../article-thumbnail/ArticleThumbnailSmall";
+import { ArticleThumbnailMedium } from "../article-thumbnail/ArticleThumnailMedium";
+import { ArticleLink } from "../article-thumbnail/ArticleLink";
+import { VerticalBanner } from "../ads/VerticalBanner";
+import { NavBar } from "../navbar/NavBar";
+import { useParams } from "react-router-dom";
 
+export function Category({articles}){
 
+  let { category } = useParams();
 
-export function Home({articles}){
-  
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -22,6 +23,7 @@ export function Home({articles}){
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  console.log(category);
   console.log("view width changed, new width = " + screenWidth);
   return (
     <div className={styles.container}>
@@ -40,36 +42,29 @@ export function Home({articles}){
               style={{ width: "25%", height: "30%" }}
               className={styles.flex_row_small}
             >
-              {articles.filter((a) => a.id < 4).map((a) => <ArticleLink article={a} key={a.id} />
-              )}
+              {articles
+                .filter((a) => a.id < 4)
+                .map((a) => (
+                  <ArticleLink article={a} key={a.id} />
+                ))}
               <VerticalBanner imageUrl={"/sportad.png"} />
             </div>
           </>
         ) : null}
         <div className={screenWidth > 700 ? styles.flex_row_large : null}>
-          <ArticleThumbnailMedium article={articles[0]} />
-          <div
-            style={{
-              height: "0px",
-              borderStyle: "solid",
-              borderColor: "black",
-              borderWidth: "1px",
-              opacity: "0.3",
-              marginTop: "20px",
-              marginBottom: "20px",
-            }}
-          ></div>
-          {screenWidth > 700 ? (
-            <div className={styles.flex_row} style={{ gap: "25px" }}>
-              {articles.filter(a => a.id < 4).map((a) => <ArticleThumbnailMedium article={a} key={a.id} />)}
-            </div>
-          ) : null}
+          {articles
+            .filter((a) => a.category === category)
+            .map((a) => (
+              <ArticleThumbnailMedium article={a} key={a.id} />
+            ))}
         </div>
         <div
           style={screenWidth > 700 ? { width: "30%" } : { width: "100%" }}
           className={styles.flex_row_small}
         >
-          {articles.map((a) => <ArticleThumbnailSmall article={a} key={a.id} />)}
+          {articles.map((a) => (
+            <ArticleThumbnailSmall article={a} key={a.id} />
+          ))}
         </div>
       </div>
       <div
@@ -103,12 +98,19 @@ export function Home({articles}){
       ></div>
       {screenWidth > 500 ? (
         <div className={styles.flex_row} style={{ gap: "25px", width: "80%" }}>
-          {articles.filter(a => a.id < 3).map((a) => <ArticleThumbnailMedium article={a} key={a.id} /> )}
+          {articles
+            .filter((a) => a.id < 3)
+            .map((a) => (
+              <ArticleThumbnailMedium article={a} key={a.id} />
+            ))}
         </div>
       ) : (
         <div style={{ width: "90%", marginLeft: "auto", marginRight: "auto" }}>
-          {articles.filter(a => a.id < 2).map((a) => <ArticleThumbnailMedium article={a} key={a.id} />)}
-          
+          {articles
+            .filter((a) => a.id < 2)
+            .map((a) => (
+              <ArticleThumbnailMedium article={a} key={a.id} />
+            ))}
         </div>
       )}
     </div>
