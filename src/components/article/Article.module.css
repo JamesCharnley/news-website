@@ -14,15 +14,20 @@
   margin-right: auto;
   gap: 35px;
 }
+.flex_row{
+  flex-direction: column;
+}
 .article{
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .flex_row_side{
   display: flex;
   flex-direction: column;
-  width: 24%;
   gap: 20px;
   padding-top: 17vh;
+  margin-left:auto;
+  margin-right: auto;
 }
 .image{
   position: relative;
