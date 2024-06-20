@@ -1,5 +1,19 @@
+import { useEffect, useState } from "react";
 import styles from "./NavBar.module.css";
 export function NavBar() {
+  
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className={styles.sticky_navbar}>
       <div className={styles.tabs}>
@@ -15,7 +29,11 @@ export function NavBar() {
         </div>
         <a href="/">
           <div
-            style={{ backgroundImage: `url("/aignews.png")` }}
+            style={
+              screenWidth > 700
+                ? { backgroundImage: `url("/aignews.png")`, width: "220px" }
+                : { backgroundImage: `url("/aignews.png")`, width: "150px" }
+            }
             className={styles.image}
           ></div>
         </a>

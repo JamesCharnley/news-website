@@ -25,11 +25,10 @@
 .image{
   float: left;
   display: block;
-  width: 220px;
   height: 90px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .tabs{
   display: flex;
@@ -45,6 +44,8 @@
     
    .nav_content{
       font-size: 14px;
+      padding-left: 8px;
+      padding-right: 8px;
     }
     .tabs{
       padding-top: 8px;
