@@ -34,6 +34,9 @@
 .title{
     font-size: 30px;
     font-weight: 500;
+    color: black;
+    padding: 0;
+    margin: 0;
   }
 
 .container a{
@@ -43,12 +46,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 @container (min-width: 25px){
-  .title{
-    font-size: 9px;
-    padding: 0;
-    margin: 0;
-    color: black;
-  }
+
   .footer a{
     padding: 0;
     font-size: 12px;
@@ -61,12 +59,7 @@
   }
 }
 @container (min-width: 75px){
-  .title{
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-    color: black;
-  }
+
   .footer a{
     padding: 0;
     font-size: 12px;
@@ -79,12 +72,7 @@
   }
 }
 @container (min-width: 125px){
-  .title{
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    color: black;
-  }
+
   .footer a{
     padding: 0;
     font-size: 12px;
@@ -97,12 +85,7 @@
   }
 }
 @container (min-width: 150px){
-  .title{
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    color: black;
-  }
+
   .footer a{
     padding: 0;
     font-size: 12px;
@@ -115,10 +98,7 @@
   }
 }
 @container (min-width: 200px){
-  .title{
-    font-size: 22px;
-    color: black;
-  }
+
    .footer a{
     padding: 0;
     font-size: 16px;
@@ -131,10 +111,7 @@
   }
 }
 @container (min-width: 250px){
-  .title{
-    font-size: 27px;
-    color: black;
-  }
+
    .footer a{
     padding: 0;
     font-size: 16px;
@@ -147,10 +124,7 @@
   }
 }
 @container (min-width: 300px){
-  .title{
-    font-size: 32px;
-    color: black;
-  }
+
    .footer a{
     padding: 0;
     font-size: 17px;
